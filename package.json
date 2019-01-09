@@ -1,0 +1,24 @@
+{
+  "name": "lucky-numbers",
+  "version": "1.0.0",
+  "description": "Just some number methods (lottery, random & between)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vandeurenglenn/lucky-numbers.git"
+  },
+  "keywords": [
+    "random",
+    "number",
+    "lottery"
+  ],
+  "author": "Glenn Vandeuren <vandeurenglenn@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vandeurenglenn/lucky-numbers/issues"
+  },
+  "homepage": "https://github.com/vandeurenglenn/lucky-numbers#readme"
+}
