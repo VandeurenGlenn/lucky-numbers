@@ -4,7 +4,7 @@ const unique = arr => arr.filter((el, pos, arr) => {
 
 const between = (min, max, length = 1) => {
   let arr = [];
-  for (i=0; i < length; i++) {
+  for (let i = 0; i < length; i++) {
     arr = [...arr, Math.random() * (max - min) + min]
   }
   return arr;
@@ -12,7 +12,7 @@ const between = (min, max, length = 1) => {
 
 const random = (max, length = 1) => {
   let arr = [];
-  for (i=0; i < length; i++) {
+  for (let i = 0; i < length; i++) {
     arr = [...arr, Math.floor(Math.random() * Math.floor(max))]
   }
   return arr;
