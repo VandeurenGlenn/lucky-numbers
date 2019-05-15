@@ -4,15 +4,15 @@ const unique = arr => arr.filter((el, pos, arr) => {
 
 const between = (min, max, length = 1) => {
   let arr = [];
-  for (let i = 0; i < length; i++) {
-    arr = [...arr, Math.random() * (max - min) + min]
+  for (let i = 0; i < length; ++i) {
+    arr = [...arr, Math.floor(Math.random() * (max - min) + min)];
   }
   return arr;
 }
 
 const random = (max, length = 1) => {
   let arr = [];
-  for (let i = 0; i < length; i++) {
+  for (let i = 0; i < length; ++i) {
     arr = [...arr, Math.floor(Math.random() * Math.floor(max))]
   }
   return arr;
@@ -21,7 +21,8 @@ const random = (max, length = 1) => {
 /**
  *
  * @param {number} numbers - total of numbers to return
- * @param {number} max - maxumum value of biggest number
+ * @param {number} max - maximum value of biggest number
+ * @param {number} min - minimum value of smallest number
  * @param {number} length - set length to pick the numbers from
  *
  * @example
@@ -36,12 +37,14 @@ const random = (max, length = 1) => {
  * lottery(100, 7, 500)
  * ```
  */
-const lottery = (numbers = 7, max = 100, length = 100) => {
+const lottery = (numbers = 7, max = 100, min = 0, length = 100) => {
   let arr = [];
-  let ran = random(max, length);
-  ran = unique(ran)
+  let ran = between(min, max, length);
+  ran = unique(ran);
   for (let i = 0; i < numbers; i++) {
-    arr = [...arr, ran[random(ran.length)[0]]]
+    let _ran = between(min, max, ran.length)[0] - min;
+    if (_ran > ran.length - 1) _ran -= 1;
+    arr = [...arr, ran[_ran]];
   }
   return arr;
 }
