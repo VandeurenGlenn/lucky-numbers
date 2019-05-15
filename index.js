@@ -41,9 +41,8 @@ const lottery = (numbers = 7, max = 100, min = 0, length = 100) => {
   let arr = [];
   let ran = between(min, max, length);
   ran = unique(ran);
-  for (let i = 0; i < numbers; i++) {
-    let _ran = between(min, max, ran.length)[0] - min;
-    if (_ran > ran.length - 1) _ran -= 1;
+  for (let i = 0; i < numbers; ++i) {
+    const _ran = between(min, ran.length, ran.length)[0];
     arr = [...arr, ran[_ran]];
   }
   return arr;
