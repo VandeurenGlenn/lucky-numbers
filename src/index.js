@@ -1,8 +1,8 @@
-const unique = arr => arr.filter((el, pos, arr) => {
+export const unique = arr => arr.filter((el, pos, arr) => {
   return arr.indexOf(el) == pos;
 })
 
-const between = (min, max, length = 1) => {
+export const between = (min, max, length = 1) => {
   let arr = [];
   for (let i = 0; i < length; ++i) {
     arr = [...arr, Math.floor(Math.random() * (max - min) + min)];
@@ -10,7 +10,7 @@ const between = (min, max, length = 1) => {
   return arr;
 }
 
-const random = (max, length = 1) => {
+export const random = (max, length = 1) => {
   let arr = [];
   for (let i = 0; i < length; ++i) {
     arr = [...arr, Math.floor(Math.random() * Math.floor(max))]
@@ -37,7 +37,7 @@ const random = (max, length = 1) => {
  * lottery(100, 7, 500)
  * ```
  */
-const lottery = (numbers = 7, max = 100, min = 0, length = 100) => {
+export const lottery = (numbers = 7, max = 100, min = 0, length = 100) => {
   let arr = [];
   let ran = between(min, max, length);
   ran = unique(ran);
@@ -49,6 +49,7 @@ const lottery = (numbers = 7, max = 100, min = 0, length = 100) => {
 }
 
 export default {
+  unique,
   between,
   random,
   lottery
