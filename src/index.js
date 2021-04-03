@@ -48,7 +48,7 @@ const lottery = (numbers = 7, max = 100, min = 0, length = 100) => {
   return arr;
 }
 
-module.exports = {
+export default {
   between,
   random,
   lottery
