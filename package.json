@@ -1,6 +1,6 @@
 {
   "name": "lucky-numbers",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Just some number methods (lottery, random & between)",
   "main": "dist/commonjs/index.js",
   "module": "src/index.js",
