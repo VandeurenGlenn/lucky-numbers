@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/vandeurenglenn/lucky-numbers#readme",
   "dependencies": {
-    "rollup": "^2.44.0"
+    "rollup": "^2.63.0"
   }
 }
