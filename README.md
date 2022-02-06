@@ -17,19 +17,19 @@ yarn add lucky-numbers
 import {lottery, random, between} from 'lucky-numbers';
 // 7 numbers
 // greatest number 99
-lottery(7, 100) // [1, 99, 40, 70, 33, 55, 77]
+lottery(7, 99) // [1, 99, 40, 70, 33, 55, 77]
 
 // 7 numbers
 // greatest number 9
-lottery(7, 10) // [1, 9, 4, 7, 3, 5, 7]
+lottery(7, 9) // [1, 9, 4, 7, 3, 5, 7]
 
 // 5 numbers
 // greatest number 5
-lottery(5, 6) // [1, 5, 4, 0, 3]
+lottery(5, 5) // [1, 5, 4, 0, 3]
 
 // 5 numbers
-// greatest number 9
-lottery(5, 10) // [1, 9, 4, 7, 3]
+// greatest number 10
+lottery(5, 10) // [1, 9, 4, 7, 10]
 ```
 
 ## License
