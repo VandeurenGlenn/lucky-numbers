@@ -1,10 +1,11 @@
 {
   "name": "lucky-numbers",
-  "version": "1.1.1",
+  "version": "1.1.3",
   "description": "Just some number methods (lottery, random & between)",
-  "main": "index.js",
+  "main": "dist/commonjs/index.js",
   "module": "src/index.js",
   "scripts": {
+    "c": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/vandeurenglenn/lucky-numbers/issues"
   },
-  "homepage": "https://github.com/vandeurenglenn/lucky-numbers#readme"
+  "homepage": "https://github.com/vandeurenglenn/lucky-numbers#readme",
+  "dependencies": {
+    "rollup": "^2.44.0"
+  }
 }
