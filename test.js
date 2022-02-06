@@ -1,4 +1,4 @@
-const {lottery} = require('./index');
+const {lottery} = require('./dist/commonjs');
 
 let results = []
 
