@@ -2,10 +2,15 @@
   "name": "lucky-numbers",
   "version": "1.2.0",
   "description": "Just some number methods (lottery, random & between)",
-  "main": "dist/commonjs/index.js",
-  "module": "src/index.js",
+  "exports": {
+    ".": {
+      "import": "./lib/index.js",
+      "types": "./lib/index.d.ts"
+    }
+  },
+  "type": "module",
   "scripts": {
-    "c": "rollup -c",
+    "build": "npx tsc --declaration lib/index.ts --target es2022",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,6 +29,7 @@
   },
   "homepage": "https://github.com/vandeurenglenn/lucky-numbers#readme",
   "dependencies": {
-    "rollup": "^2.44.0"
+    "rollup": "^2.44.0",
+    "typescript": "^5.4.3"
   }
 }
