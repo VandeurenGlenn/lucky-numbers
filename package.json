@@ -30,6 +30,6 @@
   "homepage": "https://github.com/vandeurenglenn/lucky-numbers#readme",
   "dependencies": {
     "rollup": "^2.44.0",
-    "typescript": "^5.4.3"
+    "typescript": "^5.4.4"
   }
 }
