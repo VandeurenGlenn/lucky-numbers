@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/vandeurenglenn/lucky-numbers#readme",
   "dependencies": {
-    "rollup": "^2.44.0",
+    "rollup": "^3.29.5",
     "typescript": "^5.4.3"
   }
 }
